@@ -275,7 +275,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: tintitinnti
+  m_Text: manman
 --- !u!222 &993846402
 CanvasRenderer:
   m_ObjectHideFlags: 0
