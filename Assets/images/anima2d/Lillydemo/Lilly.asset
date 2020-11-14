@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: Lilly
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: bust
+    localPosition: {x: -0.2580097, y: 0.22001886, z: -0.000015623868}
+    localRotation: {x: 0, y: 0, z: 0.6635209, w: 0.74815786}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bust/Larm1
+    localPosition: {x: 0.14472537, y: 0.079551436, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.17399825, w: 0.984746}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bust/Larm1/Larm2
+    localPosition: {x: 0.23806448, y: 0.000000014901161, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bust/Larm1/Larm2/Larm3
+    localPosition: {x: 0.21558172, y: -0.00000006706432, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.14906502, w: -0.98882747}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bust/Rarm1
+    localPosition: {x: 0.16429758, y: -0.110298395, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.08109381, w: 0.9967065}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bust/Rarm1/Rarm2
+    localPosition: {x: 0.23807864, y: 0.000011973083, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bust/Rarm1/Rarm2/Rarm3
+    localPosition: {x: 0.21558197, y: 0.0000001040753, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.42059577, w: 0.90724814}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bust/neck
+    localPosition: {x: 0.1981701, y: -0.014827117, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.03250333, w: 0.9994716}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: koshi
+    localPosition: {x: -0.2633118, y: 0.18998095, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.5718975, w: 0.82032514}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: koshi/Lreg1
+    localPosition: {x: 0.15559287, y: -0.0541839, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.13615519, w: 0.99068755}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: koshi/Lreg1/Lleg2
+    localPosition: {x: 0.3553283, y: -0.000000006208211, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: koshi/Lreg1/Lleg2/Lleg3
+    localPosition: {x: 0.39738297, y: -8.2945917e-10, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.067654416, w: 0.9977088}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: koshi/Rleg1
+    localPosition: {x: 0.162576, y: 0.11834036, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.20955367, w: 0.97779715}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: koshi/Rleg1/Rleg2
+    localPosition: {x: 0.36376378, y: 0.000000038219696, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: koshi/Rleg1/Rleg2/Rleg3
+    localPosition: {x: 0.35264865, y: 0.00000006564369, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.017084373, w: 0.9998541}
+    localScale: {x: 1, y: 1, z: 1}
