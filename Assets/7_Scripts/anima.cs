@@ -20,7 +20,7 @@ public class anima : MonoBehaviour
     {
         
         animator.SetBool("test", false);
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.E))
         {
             animator.SetBool("test", true);
         }
