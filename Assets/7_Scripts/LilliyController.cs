@@ -66,7 +66,7 @@ public class LilliyController : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
-                if (MousePos.y > mouseposY + 50)
+                if (MousePos.y > mouseposY + 15)
                 {
                     animator.SetBool("jump", false);
                     moveDirection.y = jumpSpeed;
