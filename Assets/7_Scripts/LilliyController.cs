@@ -83,7 +83,7 @@ public class LilliyController : MonoBehaviour
         }
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
-        
+        /*
         if (Input.GetKey(KeyCode.A))
         {
             h = -1;
@@ -102,7 +102,7 @@ public class LilliyController : MonoBehaviour
             animator.SetBool("dash", false);
 
         }
-        
+        */
 
     }//Update()
 }
