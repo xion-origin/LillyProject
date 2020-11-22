@@ -19,57 +19,57 @@ MonoBehaviour:
     localScale: {x: 1, y: 1, z: 1}
   - path: bust/Larm1
     localPosition: {x: 0.14472537, y: 0.079551436, z: 0}
-    localRotation: {x: 0, y: 0, z: 0.93126017, w: 0.36435494}
+    localRotation: {x: 0, y: 0, z: 0.9938288, w: 0.11092541}
     localScale: {x: 1, y: 1, z: 1}
   - path: bust/Larm1/Larm2
     localPosition: {x: 0.23806448, y: 0.000000014901161, z: 0}
-    localRotation: {x: 0, y: 0, z: -0.6652675, w: 0.7466051}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
     localScale: {x: 1, y: 1, z: 1}
   - path: bust/Larm1/Larm2/Larm3
     localPosition: {x: 0.21558172, y: -0.00000006706432, z: 0}
-    localRotation: {x: -0, y: -0, z: -0.25405115, w: -0.96719074}
+    localRotation: {x: -0, y: -0, z: 0.06967379, w: -0.99756986}
     localScale: {x: 1, y: 1, z: 1}
   - path: bust/Rarm1
     localPosition: {x: 0.16429758, y: -0.110298395, z: 0}
-    localRotation: {x: 0, y: 0, z: -0.95825076, w: 0.28592917}
+    localRotation: {x: 0, y: 0, z: 0.9494075, w: -0.3140469}
     localScale: {x: 1, y: 1, z: 1}
   - path: bust/Rarm1/Rarm2
     localPosition: {x: 0.23807864, y: 0.000011973083, z: 0}
-    localRotation: {x: 0, y: 0, z: 0.7184855, w: 0.69554204}
+    localRotation: {x: 0, y: 0, z: -0.7654385, w: 0.6435091}
     localScale: {x: 1, y: 1, z: 1}
   - path: bust/Rarm1/Rarm2/Rarm3
     localPosition: {x: 0.21558197, y: 0.0000001040753, z: 0}
-    localRotation: {x: -0, y: -0, z: -0.0850192, w: 0.9963794}
+    localRotation: {x: -0, y: -0, z: -0.038976192, w: -0.99924016}
     localScale: {x: 1, y: 1, z: 1}
   - path: bust/neck
-    localPosition: {x: 0.19817007, y: -0.014827132, z: 0}
-    localRotation: {x: -0, y: -0, z: 0.07130289, w: 0.9974547}
+    localPosition: {x: 0.19817014, y: -0.014827132, z: -3.637979e-12}
+    localRotation: {x: -0, y: -0, z: -0.02479926, w: 0.99969244}
     localScale: {x: 1, y: 1, z: 1}
   - path: koshi
-    localPosition: {x: -0.319, y: 0.156, z: -0.000042319294}
+    localPosition: {x: -0.319, y: 0.156, z: -0.00004231929}
     localRotation: {x: 0, y: 0, z: -0.6792565, w: 0.73390096}
     localScale: {x: 1, y: 1, z: 1}
   - path: koshi/Lreg1
     localPosition: {x: 0.15559287, y: -0.0541839, z: 0}
-    localRotation: {x: 0, y: 0, z: -0.1148248, w: 0.9933858}
+    localRotation: {x: 0, y: 0, z: -0.09589475, w: 0.9953915}
     localScale: {x: 1, y: 1, z: 1}
   - path: koshi/Lreg1/Lleg2
     localPosition: {x: 0.3553283, y: -0.000000006208211, z: 0}
-    localRotation: {x: 0, y: 0, z: 0.16183919, w: 0.9868172}
+    localRotation: {x: 0, y: 0, z: 0.24922673, w: 0.9684452}
     localScale: {x: 1, y: 1, z: 1}
   - path: koshi/Lreg1/Lleg2/Lleg3
     localPosition: {x: 0.39738297, y: -8.2945917e-10, z: 0}
-    localRotation: {x: -0, y: -0, z: -0.48114902, w: 0.8766389}
+    localRotation: {x: -0, y: -0, z: -0.57313687, w: 0.8194596}
     localScale: {x: 1, y: 1, z: 1}
   - path: koshi/Rleg1
     localPosition: {x: 0.162576, y: 0.11834036, z: 0}
-    localRotation: {x: 0, y: 0, z: -0.050033256, w: 0.9987476}
+    localRotation: {x: 0, y: 0, z: -0.050331857, w: 0.99873257}
     localScale: {x: 1, y: 1, z: 1}
   - path: koshi/Rleg1/Rleg2
     localPosition: {x: 0.36376378, y: 0.000000038219696, z: 0}
-    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localRotation: {x: 0, y: 0, z: 0.0005179005, w: 0.9999999}
     localScale: {x: 1, y: 1, z: 1}
   - path: koshi/Rleg1/Rleg2/Rleg3
     localPosition: {x: 0.35264865, y: 0.00000006564369, z: 0}
-    localRotation: {x: -0, y: -0, z: -0.09903562, w: 0.995084}
+    localRotation: {x: -0, y: -0, z: -0.0992534, w: 0.99506223}
     localScale: {x: 1, y: 1, z: 1}
