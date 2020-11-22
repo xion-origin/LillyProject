@@ -25,6 +25,22 @@ public class LilliyController : MonoBehaviour
     void Update()
     {
         
+       
+        moveDirection.x = h * move_speed;
+        if (controller.isGrounded)//地上
+        {
+            
+            animator.SetBool("jump", false);
+            if (Input.GetKeyDown(KeyCode.Space))
+                moveDirection.y = jumpSpeed;
+        }
+        else//空中
+        {
+            Debug.Log("空中");
+            animator.SetBool("jump", true);
+        }
+        moveDirection.y -= gravity * Time.deltaTime;
+        controller.Move(moveDirection * Time.deltaTime);
         if (Input.GetKey(KeyCode.A))
         {
             h = -1;
@@ -43,22 +59,6 @@ public class LilliyController : MonoBehaviour
             animator.SetBool("dash", false);
 
         }
-        moveDirection.x = h * move_speed;
-        if (controller.isGrounded)//地上
-        {
-            
-            animator.SetBool("jump", false);
-            if (Input.GetKeyDown(KeyCode.Space))
-                moveDirection.y = jumpSpeed;
-        }
-        else//空中
-        {
-            Debug.Log("空中");
-            animator.SetBool("jump", true);
-        }
-        moveDirection.y -= gravity * Time.deltaTime;
-        controller.Move(moveDirection * Time.deltaTime);
-        
 
     }//Update()
 }
