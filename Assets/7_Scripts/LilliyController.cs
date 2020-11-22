@@ -12,6 +12,11 @@ public class LilliyController : MonoBehaviour
     private float h, v;
     public float move_speed ;
     public GameObject LillyObj;
+    Vector3 MousePos;
+    Vector3 SaveMousePos;
+
+    float mouseposX;
+    float mouseposY;
 
     Animator animator;
     // Use this for initialization
@@ -24,23 +29,61 @@ public class LilliyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MousePos = Input.mousePosition;
         
-       
+        if (Input.GetMouseButtonDown(0))
+        {
+            SaveMousePos = MousePos;
+            mouseposX = SaveMousePos.x;
+            mouseposY = SaveMousePos.x;
+        }
+        if (Input.GetMouseButton(0))
+        {
+            if (MousePos.x < mouseposX - 100)
+            {
+                Debug.Log("マウス座標X:" + MousePos.x + "　Y:" + MousePos.y);
+                h = -1;
+                LillyObj.transform.localScale = new Vector3(1, 1, 1);
+                animator.SetBool("dash", true);
+            }
+            else if (MousePos.x > mouseposX + 100)
+            {
+                h = 1;
+                LillyObj.transform.localScale = new Vector3(-1, 1, 1);
+                animator.SetBool("dash", true);
+            }
+            
+
+        }
+        else
+        {
+            h = 0;
+            animator.SetBool("dash", false);
+        }
+
         moveDirection.x = h * move_speed;
         if (controller.isGrounded)//地上
         {
-            
+            if (Input.GetMouseButton(0))
+            {
+                if (MousePos.y > mouseposY + 50)
+                {
+                    animator.SetBool("jump", false);
+                    moveDirection.y = jumpSpeed;
+                }
+            }
             animator.SetBool("jump", false);
             if (Input.GetKeyDown(KeyCode.Space))
                 moveDirection.y = jumpSpeed;
         }
         else//空中
         {
-            Debug.Log("空中");
+            
             animator.SetBool("jump", true);
         }
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
+        /*
         if (Input.GetKey(KeyCode.A))
         {
             h = -1;
@@ -59,6 +102,7 @@ public class LilliyController : MonoBehaviour
             animator.SetBool("dash", false);
 
         }
+        */
 
     }//Update()
 }
