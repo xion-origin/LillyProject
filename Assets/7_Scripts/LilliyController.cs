@@ -18,6 +18,9 @@ public class LilliyController : MonoBehaviour
     float mouseposX;
     float mouseposY;
 
+    public float mousbufx  = 100;
+    public float mousbufy =  15;
+
     Animator animator;
     // Use this for initialization
     void Start()
@@ -35,18 +38,18 @@ public class LilliyController : MonoBehaviour
         {
             SaveMousePos = MousePos;
             mouseposX = SaveMousePos.x;
-            mouseposY = SaveMousePos.x;
+            mouseposY = SaveMousePos.y;
         }
         if (Input.GetMouseButton(0))
         {
-            if (MousePos.x < mouseposX - 100)
+            if (MousePos.x < mouseposX - mousbufx)
             {
                 Debug.Log("マウス座標X:" + MousePos.x + "　Y:" + MousePos.y);
                 h = -1;
                 LillyObj.transform.localScale = new Vector3(1, 1, 1);
                 animator.SetBool("dash", true);
             }
-            else if (MousePos.x > mouseposX + 100)
+            else if (MousePos.x > mouseposX + mousbufx)
             {
                 h = 1;
                 LillyObj.transform.localScale = new Vector3(-1, 1, 1);
@@ -66,7 +69,7 @@ public class LilliyController : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
-                if (MousePos.y > mouseposY + 15)
+                if (MousePos.y > mouseposY + mousbufy)
                 {
                     animator.SetBool("jump", false);
                     moveDirection.y = jumpSpeed;
