@@ -1,0 +1,931 @@
+fileFormatVersion: 2
+guid: 10932a23e6bc81f438b1330dee10e131
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8853321258923730638
+    second: LillyPng_0
+  - first:
+      213: 1186885620502042058
+    second: LillyPng_1
+  - first:
+      213: 7954182896237852275
+    second: LillyPng_2
+  - first:
+      213: 6420630656325393216
+    second: LillyPng_3
+  - first:
+      213: -2238606309442579399
+    second: LillyPng_4
+  - first:
+      213: -7721401206916191179
+    second: LillyPng_5
+  - first:
+      213: 4127785452515718617
+    second: LillyPng_6
+  - first:
+      213: -1790413192782558107
+    second: LillyPng_7
+  - first:
+      213: 4358134111129143092
+    second: LillyPng_8
+  - first:
+      213: -8685277258381171325
+    second: LillyPng_9
+  - first:
+      213: 8674781645740216547
+    second: LillyPng_10
+  - first:
+      213: 4689033385794172730
+    second: LillyPng_11
+  - first:
+      213: 910010866023133830
+    second: LillyPng_12
+  - first:
+      213: -6773227537912011166
+    second: LillyPng_13
+  - first:
+      213: 2263576167099771580
+    second: LillyPng_14
+  - first:
+      213: -3816008810745222978
+    second: LillyPng_15
+  - first:
+      213: 8518106845317391443
+    second: LillyPng_16
+  - first:
+      213: -3928966528094112277
+    second: LillyPng_17
+  - first:
+      213: -9047480757187172471
+    second: LillyPng_18
+  - first:
+      213: -7092928459911274114
+    second: LillyPng_19
+  - first:
+      213: 2628374827282227559
+    second: LillyPng_20
+  - first:
+      213: 8013022789628062829
+    second: LillyPng_21
+  - first:
+      213: -5474776143742370460
+    second: LillyPng_22
+  - first:
+      213: 7078460979676231968
+    second: LillyPng_23
+  - first:
+      213: 7253616302928481317
+    second: LillyPng_24
+  - first:
+      213: 3460808041230371604
+    second: LillyPng_25
+  - first:
+      213: -35901001286874747
+    second: LillyPng_26
+  - first:
+      213: 5470511819039407991
+    second: LillyPng_27
+  - first:
+      213: -5760613119651625582
+    second: LillyPng_28
+  - first:
+      213: -7932268851583481310
+    second: LillyPng_29
+  - first:
+      213: 5770729768505798055
+    second: LillyPng_30
+  - first:
+      213: -6939800746352941307
+    second: LillyPng_31
+  - first:
+      213: 3458714177241334050
+    second: LillyPng_32
+  - first:
+      213: 2270214375203979354
+    second: LillyPng_33
+  - first:
+      213: 1623810413608327020
+    second: LillyPng_34
+  - first:
+      213: -4031620977660299232
+    second: LillyPng_35
+  - first:
+      213: -2208594047625378632
+    second: LillyPng_36
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LillyPng_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 933
+        width: 226
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6209037c05dda70800000000000000
+      internalID: 8853321258923730638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_1
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 858
+        width: 89
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac51b07fe2aa87010800000000000000
+      internalID: 1186885620502042058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_2
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 869
+        width: 98
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376beb8733fe26e60800000000000000
+      internalID: 7954182896237852275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_3
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 976
+        width: 40
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b12406099aa1950800000000000000
+      internalID: 6420630656325393216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_4
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 973
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9341ab51c6fdee0e0800000000000000
+      internalID: -2238606309442579399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_5
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 929
+        width: 61
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cec75138218d490800000000000000
+      internalID: -7721401206916191179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_6
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 943
+        width: 28
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d57936cff6d84930800000000000000
+      internalID: 4127785452515718617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_7
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 938
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cc50befac2727e0800000000000000
+      internalID: -1790413192782558107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_8
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 551
+        width: 204
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4378d5932e33b7c30800000000000000
+      internalID: 4358134111129143092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_9
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 706
+        width: 81
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385696e9952b77780800000000000000
+      internalID: -8685277258381171325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_10
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 714
+        width: 96
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e09c6222f3036870800000000000000
+      internalID: 8674781645740216547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_11
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 808
+        width: 132
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a377534550bc21140800000000000000
+      internalID: 4689033385794172730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_12
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 613
+        width: 94
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682fd0baf0201ac00800000000000000
+      internalID: 910010866023133830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_13
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 610
+        width: 93
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2666cdbb079a002a0800000000000000
+      internalID: -6773227537912011166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_14
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 629
+        width: 265
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbaa502f786d96f10800000000000000
+      internalID: 2263576167099771580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_15
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 339
+        width: 80
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb825c76430da0bc0800000000000000
+      internalID: -3816008810745222978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_16
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 342
+        width: 80
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35467f18b05663670800000000000000
+      internalID: 8518106845317391443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_17
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 565
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5fc8e52c18979c0800000000000000
+      internalID: -3928966528094112277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_18
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 570
+        width: 62
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9872dabdf24e07280800000000000000
+      internalID: -9047480757187172471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_19
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 544
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71eab9452bd09d90800000000000000
+      internalID: -7092928459911274114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_20
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 546
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7616cbccafcd97420800000000000000
+      internalID: 2628374827282227559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_21
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 515
+        width: 49
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ce3e8b5c9f33f60800000000000000
+      internalID: 8013022789628062829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_22
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 521
+        width: 52
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46df3779a10b504b0800000000000000
+      internalID: -5474776143742370460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_23
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 480
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029b01af1cebb3260800000000000000
+      internalID: 7078460979676231968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_25
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 485
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b0a5dc392470030800000000000000
+      internalID: 3460808041230371604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_26
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 51
+        width: 173
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5890733ca34708ff0800000000000000
+      internalID: -35901001286874747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_27
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 113
+        width: 154
+        height: 301
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f7b61f3892beb40800000000000000
+      internalID: 5470511819039407991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_28
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 96
+        width: 65
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295c5b283e03e00b0800000000000000
+      internalID: -5760613119651625582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_29
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 93
+        width: 65
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a8876a18beae190800000000000000
+      internalID: -7932268851583481310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_30
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 307
+        width: 147
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad6f8a5620c51050800000000000000
+      internalID: 5770729768505798055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_32
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 247
+        width: 143
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221c31a1832dfff20800000000000000
+      internalID: 3458714177241334050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_33
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 171
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50c40632fb618f10800000000000000
+      internalID: 2270214375203979354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_34
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 29
+        width: 106
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6754b5c7fee88610800000000000000
+      internalID: 1623810413608327020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LillyPng_35
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 29
+        width: 106
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0287b8dc41ecc08c0800000000000000
+      internalID: -4031620977660299232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d423e991035581f4aab0880bfc9972fb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 637418386959583787
+  assetBundleName: 
+  assetBundleVariant: 
