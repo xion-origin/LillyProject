@@ -15,13 +15,69 @@ MonoBehaviour:
   m_PivotPoint: {x: 1002, y: 576.5}
   m_Vertices:
   - {x: 1018, y: 607}
-  - {x: 1003, y: 546}
-  - {x: 1018, y: 562}
+  - {x: 1007.98663, y: 553.80524}
+  - {x: 1018.6504, y: 569.3716}
   - {x: 997, y: 607}
-  - {x: 988, y: 595}
-  - {x: 986, y: 567}
+  - {x: 988.8672, y: 593.26544}
+  - {x: 988.3849, y: 570.25214}
   - {x: 986, y: 546}
-  m_BoneWeights: []
+  m_BoneWeights:
+  - weight0: 0.72
+    weight1: 0.28
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: -1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: -1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 0.72
+    weight1: 0.28
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 0.72
+    weight1: 0.28
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: 1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: -1
+    boneIndex2: -1
+    boneIndex3: -1
+  - weight0: 1
+    weight1: 0
+    weight2: 0
+    weight3: 0
+    boneIndex0: 0
+    boneIndex1: -1
+    boneIndex2: -1
+    boneIndex3: -1
   m_Edges:
   - index1: 6
     index2: 5
@@ -38,8 +94,52 @@ MonoBehaviour:
   - index1: 2
     index2: 1
   m_Holes: []
-  m_Indices: 060000000500000001000000040000000100000005000000030000000100000004000000000000000100000003000000020000000100000000000000
-  m_BindPoses: []
+  m_Indices: 010000000600000005000000020000000500000004000000020000000400000000000000000000000400000003000000010000000500000002000000
+  m_BindPoses:
+  - bindPose:
+      e00: 0.007350549
+      e01: -0.99997336
+      e02: 0
+      e03: 0.34862822
+      e10: 0.99997336
+      e11: 0.007350549
+      e12: 0
+      e13: 0.007297674
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    boneLength: 0.41
+    path: Neck/Head/RightSidemini
+    name: RightSidemini
+    color: {r: 1, g: 0, b: 0, a: 1}
+    zOrder: 0
+  - bindPose:
+      e00: -0.041162632
+      e01: 0.99915254
+      e02: 0
+      e03: 0.2716427
+      e10: -0.99915254
+      e11: -0.041162632
+      e12: 0
+      e13: -0.6619832
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    boneLength: 1
+    path: Neck/Head
+    name: Head
+    color: {r: 1, g: 0.75, b: 0, a: 1}
+    zOrder: 0
   m_Blendshapes: []
 --- !u!43 &-2705791193159771249
 Mesh:
@@ -47,7 +147,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LillyPng_20
+  m_Name: Hear_side_Rigth
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -58,17 +158,53 @@ Mesh:
     firstVertex: 0
     vertexCount: 7
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.16, y: 0.305, z: 0}
+      m_Center: {x: 0.003251955, y: 0, z: 0}
+      m_Extent: {x: 0.16325195, y: 0.305, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
     channels: []
     fullWeights: []
-  m_BindPose: []
+  m_BindPose:
+  - e00: 0.007350549
+    e01: -0.99997336
+    e02: 0
+    e03: 0.34862822
+    e10: 0.99997336
+    e11: 0.007350549
+    e12: 0
+    e13: 0.007297674
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  - e00: -0.041162632
+    e01: 0.99915254
+    e02: 0
+    e03: 0.2716427
+    e10: -0.99915254
+    e11: -0.041162632
+    e12: 0
+    e13: -0.6619832
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
-  m_BonesAABB: []
+  m_BonesAABB:
+  - m_Min: {x: 0.04326883, y: -0.15493998, z: 0}
+    m_Max: {x: 0.652444, y: 0.17327316, z: 0}
+  - m_Min: {x: 0.4445609, y: -0.8344022, z: 0}
+    m_Max: {x: 0.57844234, y: -0.53766745, z: 0}
   m_VariableBoneCountWeights:
     m_Data: 
   m_MeshCompression: 0
@@ -76,7 +212,7 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 020001000000000001000300030001000400040001000500060005000100
+  m_IndexBuffer: 010006000500020005000400020004000000000004000300010005000200
   m_VertexData:
     serializedVersion: 3
     m_VertexCount: 7
@@ -138,7 +274,7 @@ Mesh:
       format: 10
       dimension: 4
     m_DataSize: 576
-    _typelessdata: 0ad7233ef6289c3e000000000000000000000000000080bf0000803f8f771b3200000000000080bf0ad7233cf6289cbe000000000000000000000000000080bf0000803f29dfb63200000000000080bf0ad7233ee17a14be000000000000000000000000000080bf0000803f99d0de3300000000000080bfcdcc4cbdf6289c3e000000000000000000000000000080bf0000803ff368813100000000000080bf295c0fbea4703d3e000000000000000000000000000080bf0000803fcca14c3200000000000080bf0ad723be5c8fc2bd000000000000000000000000000080bf0000803f5d9810b300000000000080bf0ad723bef6289cbe000000000000000000000000000080bf0000803f0000000000000000000080bf000000000000000000807e3f00c0173f00c07a3f0080083f00807e3f00800c3f0040793f00c0173f0000773f00c0143f0080763f00c00d3f0080763f0080083f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    _typelessdata: 0ad7233ef6289c3e000000000000000000000000000080bf0000803f7ee5883000000000000080bf6636753df66468be000000000000000000000000000080bf0000803fa41035b100000000000080bf00802a3e71fd91bd000000000000000000000000000080bf0000803fdf8084b000000000000080bfcdcc4cbdf6289c3e000000000000000000000000000080bf0000803f0000000000000000000080bfe17a06be9aad2b3e000000000000000000000000000080bf0000803f75f01bb000000000000080bf336b0bbe9ae97fbd000000000000000000000000000080bf0000803f1bf66bb100000000000080bf0ad723bef6289cbe000000000000000000000000000080bf0000803f858e50b100000000000080bf000000000000000000807e3f00c0173f25ff7b3f89730a3fa0a97e3fc8570e3f0040793f00c0173f8037773ffd50143fa218773f23900e3f0080763f0080083f0000000000000000ec51383f295c8f3e0000000000000000000000000100000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f00000000000000000000000000000000000000000000000000000000ec51383f295c8f3e000000000000000000000000010000000000000000000000ec51383f295c8f3e0000000000000000000000000100000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000803f00000000000000000000000000000000000000000000000000000000
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -192,8 +328,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.16, y: 0.305, z: 0}
+    m_Center: {x: 0.003251955, y: 0, z: 0}
+    m_Extent: {x: 0.16325195, y: 0.305, z: 0}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 

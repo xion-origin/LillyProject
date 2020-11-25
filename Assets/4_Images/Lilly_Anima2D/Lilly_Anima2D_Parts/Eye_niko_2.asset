@@ -18,7 +18,39 @@ MonoBehaviour:
   - {x: 871, y: 501}
   - {x: 830, y: 485}
   - {x: 871, y: 485}
-  m_BoneWeights: []
+  m_BoneWeights:
+  - weight0: 0
+    weight1: 0.33333334
+    weight2: 0.33333334
+    weight3: 0.33333334
+    boneIndex0: -1
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 0
+    weight1: 0.33333334
+    weight2: 0.33333334
+    weight3: 0.33333334
+    boneIndex0: -1
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 0
+    weight1: 0.33333334
+    weight2: 0.33333334
+    weight3: 0.33333334
+    boneIndex0: -1
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
+  - weight0: 0
+    weight1: 0.33333334
+    weight2: 0.33333334
+    weight3: 0.33333334
+    boneIndex0: -1
+    boneIndex1: 0
+    boneIndex2: 0
+    boneIndex3: 0
   m_Edges:
   - index1: 0
     index2: 1
@@ -30,7 +62,29 @@ MonoBehaviour:
     index2: 3
   m_Holes: []
   m_Indices: 000000000100000002000000020000000100000003000000
-  m_BindPoses: []
+  m_BindPoses:
+  - bindPose:
+      e00: -0.041162632
+      e01: 0.99915254
+      e02: 0
+      e03: 0.636318
+      e10: -0.99915254
+      e11: -0.041162632
+      e12: 0
+      e13: -0.28867725
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    boneLength: 1
+    path: Neck/Head
+    name: Head
+    color: {r: 1, g: 0, b: 0, a: 1}
+    zOrder: 0
   m_Blendshapes: []
 --- !u!114 &11400000
 MonoBehaviour:
@@ -54,7 +108,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LillyPng_25
+  m_Name: Eye_niko_2
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -72,10 +126,28 @@ Mesh:
     shapes: []
     channels: []
     fullWeights: []
-  m_BindPose: []
+  m_BindPose:
+  - e00: -0.041162632
+    e01: 0.99915254
+    e02: 0
+    e03: 0.636318
+    e10: -0.99915254
+    e11: -0.041162632
+    e12: 0
+    e13: -0.28867725
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
   m_BoneNameHashes: 
   m_RootBoneNameHash: 0
-  m_BonesAABB: []
+  m_BonesAABB:
+  - m_Min: {x: 0.54794747, y: -0.49679652, z: 0}
+    m_Max: {x: 0.7246886, y: -0.08055797, z: 0}
   m_VariableBoneCountWeights:
     m_Data: 
   m_MeshCompression: 0
@@ -145,7 +217,7 @@ Mesh:
       format: 10
       dimension: 4
     m_DataSize: 320
-    _typelessdata: 85eb51be0ad7a33d000000000000000000000000000080bf0000803f0000000000000000000080bf85eb513e0ad7a33d000000000000000000000000000080bf0000803f0000000000000000000080bf85eb51be0ad7a3bd000000000000000000000000000080bf0000803f0000000000000000000080bf85eb513e0ad7a3bd000000000000000000000000000080bf0000803f0000000000000000000080bf00804f3f0080fa3e00c0593f0080fa3e00804f3f0080f23e00c0593f0080f23e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    _typelessdata: 85eb51be0ad7a33d000000000000000000000000000080bf0000803f0000000000000000000080bf85eb513e0ad7a33d000000000000000000000000000080bf0000803f0000000000000000000080bf85eb51be0ad7a3bd000000000000000000000000000080bf0000803f0000000000000000000080bf85eb513e0ad7a3bd000000000000000000000000000080bf0000803f0000000000000000000080bf00804f3f0080fa3e00c0593f0080fa3e00804f3f0080f23e00c0593f0080f23eabaaaa3eabaaaa3eabaaaa3e0000000000000000000000000000000000000000abaaaa3eabaaaa3eabaaaa3e0000000000000000000000000000000000000000abaaaa3eabaaaa3eabaaaa3e0000000000000000000000000000000000000000abaaaa3eabaaaa3eabaaaa3e0000000000000000000000000000000000000000
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
