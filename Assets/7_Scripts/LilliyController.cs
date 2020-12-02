@@ -12,6 +12,7 @@ public class LilliyController : MonoBehaviour
     private float h, v;
     public float move_speed ;
     public GameObject LillyObj;
+    private bool JumpOK = false;
     Vector3 MousePos;
     Vector3 SaveMousePos;
 
@@ -46,13 +47,13 @@ public class LilliyController : MonoBehaviour
             {
                 Debug.Log("マウス座標X:" + MousePos.x + "　Y:" + MousePos.y);
                 h = -1;
-                LillyObj.transform.localScale = new Vector3(1, 1, 1);
+                LillyObj.transform.localScale = new Vector3(0.17f, 0.17f, 0.17f);
                 animator.SetBool("dash", true);
             }
             else if (MousePos.x > mouseposX + mousbufx)
             {
                 h = 1;
-                LillyObj.transform.localScale = new Vector3(-1, 1, 1);
+                LillyObj.transform.localScale = new Vector3(-0.17f, 0.17f, 0.17f);
                 animator.SetBool("dash", true);
             }
             
@@ -67,12 +68,18 @@ public class LilliyController : MonoBehaviour
         moveDirection.x = h * move_speed;
         if (controller.isGrounded)//地上
         {
+            if (MousePos.y < mouseposY + mousbufy)
+            JumpOK = true;  //地上に降りたのでジャンプOKよ
+
             if (Input.GetMouseButton(0))
             {
-                if (MousePos.y > mouseposY + mousbufy)
-                {
-                    animator.SetBool("jump", false);
-                    moveDirection.y = jumpSpeed;
+                if(JumpOK){
+                     if (MousePos.y > mouseposY + mousbufy)
+                     {
+                         JumpOK = false;
+                         animator.SetBool("jump", false);
+                         moveDirection.y = jumpSpeed;
+                     }
                 }
             }
             animator.SetBool("jump", false);
