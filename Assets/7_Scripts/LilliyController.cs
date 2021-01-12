@@ -23,6 +23,9 @@ public class LilliyController : MonoBehaviour
 
     [Header("ドラッグ入力のジャンプ感度")]
     public float mousbufy =  15;
+
+    public bool  playerLeftAngle;
+    public bool  playerRightAngle;
     //■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
 
@@ -67,16 +70,26 @@ public class LilliyController : MonoBehaviour
             //横移動の検出（クリック位置からある程度ドラッグしたら移動
             if (MousePos.x < mouseposX - mousbufx)
             {
-                Debug.Log("マウス座標X:" + MousePos.x + "　Y:" + MousePos.y);
                 h = -1;
                 LillyObj.transform.localScale = new Vector3(0.17f, 0.17f, 0.17f);
                 animator.SetBool("dash", true);
+                Debug.Log("checkIn");
+                playerRightAngle = true;
+                playerLeftAngle = true;
+                Debug.Log(playerLeftAngle);
             }
             else if (MousePos.x > mouseposX + mousbufx)
             {
                 h = 1;
                 LillyObj.transform.localScale = new Vector3(-0.17f, 0.17f, 0.17f);
                 animator.SetBool("dash", true);
+                playerRightAngle = true;
+                playerLeftAngle = false;
+            }else{
+                h = 0;
+                animator.SetBool("dash", false);
+                playerRightAngle = false;
+                playerLeftAngle = false;
             }
         }
         else
