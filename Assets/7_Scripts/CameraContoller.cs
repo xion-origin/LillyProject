@@ -78,9 +78,11 @@ public class CameraContoller : MonoBehaviour
             
             CameraWaitCount++;
             if(CameraWaitCount>CameraResetCount){
-               // this.transform.position = new Vector3(PlayerTrans.position.x + ((PlayerTrans.position.x - this.transform.position.x )), 
-                //                                                         PlayerTrans.position.y + CameraYUP, this.transform.position.z);
-                this.transform.position = new Vector3(PlayerTrans.position.x, PlayerTrans.position.y + CameraYUP, this.transform.position.z);
+                if(CameraWaitCount < (CameraSlideWaitOUT + CameraResetCount)){
+                    this.transform.position = new Vector3(PlayerTrans.position.x + ((PlayerTrans.position.x - this.transform.position.x )/(CameraWaitCount/CameraResetCount)), 
+                                                                          PlayerTrans.position.y + CameraYUP, this.transform.position.z);
+                //this.transform.position = new Vector3(PlayerTrans.position.x, PlayerTrans.position.y + CameraYUP, this.transform.position.z);
+                }
             }
             
             //カメラの座標をプレイヤーの頭上＋して表示(これだけがしっかりしてる)
