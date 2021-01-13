@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,10 +19,10 @@ public class LilliyController : MonoBehaviour
     public GameObject LillyObj;
 
     [Header("ドラッグ入力の横軸感度")]
-    public float mousbufx  = 100;
+    public float mousbufx  = 5;
 
     [Header("ドラッグ入力のジャンプ感度")]
-    public float mousbufy =  15;
+    public float mousbufy =  5;
 
     public bool  playerLeftAngle;
     public bool  playerRightAngle;
@@ -40,6 +40,8 @@ public class LilliyController : MonoBehaviour
     float mouseposX;
     float mouseposY;
     Animator animator;
+    float dragXCheck;
+    float dragYCheck;
     //■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
     // Use this for initialization
@@ -54,6 +56,8 @@ public class LilliyController : MonoBehaviour
     {
         //マウスの座標を保存
         MousePos = Input.mousePosition;
+        dragXCheck = Screen.width  / mousbufx;
+        dragYCheck = Screen.height / mousbufy;
 
         //クリックした瞬間
         if (Input.GetMouseButtonDown(0))
@@ -68,17 +72,17 @@ public class LilliyController : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             //横移動の検出（クリック位置からある程度ドラッグしたら移動
-            if (MousePos.x < mouseposX - mousbufx)
+            if (MousePos.x < mouseposX - dragXCheck)
             {
                 h = -1;
                 LillyObj.transform.localScale = new Vector3(0.17f, 0.17f, 0.17f);
                 animator.SetBool("dash", true);
-                Debug.Log("checkIn");
-                playerRightAngle = true;
+                
+                playerRightAngle = false;
                 playerLeftAngle = true;
                 Debug.Log(playerLeftAngle);
             }
-            else if (MousePos.x > mouseposX + mousbufx)
+            else if (MousePos.x > mouseposX + dragXCheck)
             {
                 h = 1;
                 LillyObj.transform.localScale = new Vector3(-0.17f, 0.17f, 0.17f);
@@ -96,18 +100,20 @@ public class LilliyController : MonoBehaviour
         {
             h = 0;
             animator.SetBool("dash", false);
+            playerRightAngle = false;
+            playerLeftAngle = false;
         }
 
 
         if (controller.isGrounded)//地上
         {
-            if (MousePos.y < mouseposY + mousbufy)
+            if (MousePos.y < mouseposY + dragYCheck)
             JumpOK = true;  //地上に降りたのでジャンプOKよ
             //ジャンプ入力
             if (Input.GetMouseButton(0))
             {
                 if(JumpOK){
-                     if (MousePos.y > mouseposY + mousbufy)
+                     if (MousePos.y > mouseposY + dragYCheck)
                      {
                          JumpOK = false;
                          animator.SetBool("jump", false);

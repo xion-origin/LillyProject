@@ -23,5 +23,8 @@ public class FPSrecord : MonoBehaviour
     {
         fps = 1f / Time.deltaTime;
         fps_text.text = fps.ToString();
+        Debug.Log("画面横サイズ : " + Screen.width + "px" );
+        Debug.Log("画面縦サイズ : " + Screen.height + "px");
+        
     }
 }
