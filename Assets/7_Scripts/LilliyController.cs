@@ -80,7 +80,6 @@ public class LilliyController : MonoBehaviour
                 
                 playerRightAngle = false;
                 playerLeftAngle = true;
-                Debug.Log(playerLeftAngle);
             }
             else if (MousePos.x > mouseposX + dragXCheck)
             {

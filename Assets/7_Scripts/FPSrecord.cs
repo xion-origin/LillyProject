@@ -7,8 +7,9 @@ public class FPSrecord : MonoBehaviour
 {
     private float fps;
     public Text fps_text;
-    // Start is called before the first frame update
 
+    public bool Debugtrigger = false;
+    // Start is called before the first frame update
     private void Awake()
     {
         Application.targetFrameRate = 60; //60FPSに設定
@@ -23,8 +24,10 @@ public class FPSrecord : MonoBehaviour
     {
         fps = 1f / Time.deltaTime;
         fps_text.text = fps.ToString();
+        if(Debugtrigger){
         Debug.Log("画面横サイズ : " + Screen.width + "px" );
         Debug.Log("画面縦サイズ : " + Screen.height + "px");
-        
+        }
+
     }
 }
