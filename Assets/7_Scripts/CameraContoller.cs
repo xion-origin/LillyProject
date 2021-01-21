@@ -9,7 +9,7 @@ public class CameraContoller : MonoBehaviour
     public GameObject TargetObject;
 
     [Header("カメラをどれくらいプレイヤーの頭上に置くか")]
-    public float CameraYUP = 0.5f;
+    public float Camera_Y_offset = 0.5f;
 
     [Header("カメラをどれくらい右にスライドするか")]
     public float CameraSlideRight ;
@@ -38,7 +38,8 @@ public class CameraContoller : MonoBehaviour
     void Start()
     {
         CameraSlideCount = 0;
-        CameraWaitCount = 99999;
+        CameraWaitCount = 99999;//CameraResetCountより上の値にしておく
+
         //プレイヤーの座標を取得
         PlayerTrans = TargetObject.GetComponent<Transform>();
         CamTransform = this.transform.position;
@@ -47,50 +48,60 @@ public class CameraContoller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(LilliyController.playerLeftAngle){//プレイヤーが左に移動する
+        //■プレイヤーが左入力を行っている
+        if(LilliyController.playerLeftAngle){
             CameraWaitCount = 0;
+            //カメラ移動中
             if(CameraSlideCount < CameraSlideWaitIN){//カメラの移動中
                 CameraSlideCount++;
-                this.transform.position = new Vector3(PlayerTrans.position.x + (CameraSlideLeft*(CameraSlideCount /CameraSlideWaitIN) ),
-                                                                         PlayerTrans.position.y + CameraYUP, this.transform.position.z);
+                //this.transform.position = new Vector3(PlayerTrans.position.x + (CameraSlideLeft*(CameraSlideCount /CameraSlideWaitIN) ),
+                //                                                         PlayerTrans.position.y + Camera_Y_offset, this.transform.position.z);
+                this.transform.position = new Vector3(this.transform.position.x + ((CameraSlideLeft+(PlayerTrans.position.x -CamTransform.x))*(CameraSlideCount /CameraSlideWaitIN) ),
+                                                                         PlayerTrans.position.y + Camera_Y_offset, this.transform.position.z);
                 CamTransform = this.transform.position;
             }
             else{
-                CameraSlideCount = CameraSlideWaitIN;
-                this.transform.position = new Vector3(PlayerTrans.position.x + (CameraSlideLeft*(CameraSlideCount /CameraSlideWaitIN) ),
-                                                                         PlayerTrans.position.y + CameraYUP, this.transform.position.z);
+                //カメラが指定位置までずれているのでそのままオフセットを効かせて追従
+                this.transform.position = new Vector3(PlayerTrans.position.x + CameraSlideLeft , PlayerTrans.position.y + Camera_Y_offset, this.transform.position.z);
+                //入力を辞めた際のカメラの位置を保存
                 CamTransform = this.transform.position;
             }
-        }else if(LilliyController.playerRightAngle){//プレイヤーが右に移動する
+
+        //■プレイヤーが右入力を行っている
+        }else if(LilliyController.playerRightAngle){
             CameraWaitCount = 0;
-            if(CameraSlideCount < CameraSlideWaitIN){//カメラの移動中
+            //カメラ移動中
+            if(CameraSlideCount < CameraSlideWaitIN){
                 CameraSlideCount++;
-                this.transform.position = new Vector3(PlayerTrans.position.x + (CameraSlideRight*(CameraSlideCount /CameraSlideWaitIN) ), 
-                                                                         PlayerTrans.position.y + CameraYUP, this.transform.position.z);
+                //this.transform.position = new Vector3(PlayerTrans.position.x + (CameraSlideRight*(CameraSlideCount /CameraSlideWaitIN) ), 
+                //                                                         PlayerTrans.position.y + Camera_Y_offset, this.transform.position.z);
+                this.transform.position = new Vector3(this.transform.position.x + ((CameraSlideRight+(PlayerTrans.position.x -CamTransform.x))*(CameraSlideCount /CameraSlideWaitIN) ),
+                                                                         PlayerTrans.position.y + Camera_Y_offset, this.transform.position.z);
                 CamTransform = this.transform.position;
             }else{
-                CameraSlideCount = CameraSlideWaitIN;
-                this.transform.position = new Vector3(PlayerTrans.position.x + (CameraSlideRight*(CameraSlideCount /CameraSlideWaitIN) ), 
-                                                                         PlayerTrans.position.y + CameraYUP, this.transform.position.z);
+                //カメラが指定位置までずれているのでそのままオフセットを効かせて追従
+                this.transform.position = new Vector3(PlayerTrans.position.x + CameraSlideRight , PlayerTrans.position.y + Camera_Y_offset, this.transform.position.z);
+                //入力を辞めた際のカメラの位置を保存
                 CamTransform = this.transform.position;
             }
-        }else{//プレイヤーが左右に移動しようとしてない
+
+        //■プレイヤーが入力を辞めている
+        }else{
             CameraSlideCount = 0;
             
-            //カメラリセットカウントに待機時間が達する
+            //カメラをもとの位置に戻してヨシ！
            if(CameraWaitCount>=CameraResetCount){
-               //カメラの移動時間中か
+               //カメラが移動中
                 if(CameraWaitCount < (CameraSlideWaitOUT + CameraResetCount)){
                     //カメラを指定座標へフレーム数を掛けて移動
                     this.transform.position = new Vector3(CamTransform.x + ((PlayerTrans.position.x - CamTransform.x )*((CameraWaitCount-CameraResetCount)/CameraSlideWaitOUT)), 
-                                                                                     PlayerTrans.position.y + CameraYUP, this.transform.position.z);
-                }else{
-                    //本来は必要ないはずだがカメラがなんかバグるので書いとく（まじでこういうこと良くない
-                    this.transform.position = new Vector3(PlayerTrans.position.x, PlayerTrans.position.y + CameraYUP, this.transform.position.z);
+                                                                                     PlayerTrans.position.y + Camera_Y_offset, this.transform.position.z);
+                    //CamTransform = this.transform.position;
                 }
             }else{
                 //ジャンプ中に操作を辞めるとカメラが追従しなかったので命令
-                this.transform.position = new Vector3(CamTransform.x, PlayerTrans.position.y + CameraYUP, this.transform.position.z);
+                this.transform.position = new Vector3(CamTransform.x, PlayerTrans.position.y + Camera_Y_offset, this.transform.position.z);
+                //CamTransform = this.transform.position;
             }
             CameraWaitCount++;
         }
