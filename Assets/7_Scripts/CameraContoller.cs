@@ -96,7 +96,9 @@ public class CameraContoller : MonoBehaviour
                     //カメラを指定座標へフレーム数を掛けて移動
                     this.transform.position = new Vector3(CamTransform.x + ((PlayerTrans.position.x - CamTransform.x )*((CameraWaitCount-CameraResetCount)/CameraSlideWaitOUT)), 
                                                                                      PlayerTrans.position.y + Camera_Y_offset, this.transform.position.z);
-                    //CamTransform = this.transform.position;
+                }else{
+                    //プレイヤーが一切操作してないし、カメラの移動もしてない時はプレイヤーの位置を維持する
+                    this.transform.position = new Vector3(PlayerTrans.position.x, PlayerTrans.position.y + Camera_Y_offset, this.transform.position.z);
                 }
             }else{
                 //ジャンプ中に操作を辞めるとカメラが追従しなかったので命令
