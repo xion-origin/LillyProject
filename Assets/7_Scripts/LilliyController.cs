@@ -121,8 +121,6 @@ public class LilliyController : MonoBehaviour
                 }
             }
             animator.SetBool("jump", false);
-            if (Input.GetKeyDown(KeyCode.Space))
-                moveDirection.y = jumpSpeed;
         }
         else//空中
         {

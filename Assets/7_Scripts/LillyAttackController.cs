@@ -24,8 +24,14 @@ public class LillyAttackController : MonoBehaviour
         if (controller.isGrounded)//地上
         {
             if (Input.GetKeyDown("space")){
-
+                    animator.SetBool("attack1", true);
             }
         }
+    }
+
+    void SetAnim()
+    {
+        animator.SetBool("attack1", false);
+
     }
 }
