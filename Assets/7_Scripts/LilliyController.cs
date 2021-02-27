@@ -125,14 +125,15 @@ public class LilliyController : MonoBehaviour
         else//空中
         {
             animator.SetBool("jump", true);
+            //上下の移動量の適用
+        moveDirection.y -= gravity * Time.deltaTime;
         }
 
         
         //■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-        //上下の移動量の適用
-        moveDirection.y -= gravity * Time.deltaTime;
+        
         //左右の移動量の適用
-        moveDirection.x = h * move_speed;
+        moveDirection.x = h * move_speed ;
         //最終的な移動量を反映指せる
         controller.Move(moveDirection * Time.deltaTime);
         //■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
